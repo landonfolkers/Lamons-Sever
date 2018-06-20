@@ -39,4 +39,11 @@ let Line = new mongoose.Schema({
     { collection: "lines" }
 )
 
-module.exports = Order, Line
+let Operation = new mongoose.Schema({
+    "orderNumber": String,
+    
+},
+    { collection: "lines" }
+)
+
+module.exports = Order, Line, Operation
